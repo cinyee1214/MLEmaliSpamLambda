@@ -1,0 +1,9 @@
+version: 0.2  
+phases:  
+  install:
+    commands:
+      - aws cloudformation package --template-file spam_email_prediction.yaml --s3-bucket s3-pipeline-bucket-output --output-template-file spam_email_prediction.yaml
+artifacts:  
+  type: zip
+  files:
+    - spam_email_prediction.yaml
