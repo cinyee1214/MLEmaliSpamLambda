@@ -13,6 +13,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+// This is a test for code pipeline.
 
 if sys.version_info < (3,):
     maketrans = string.maketrans
